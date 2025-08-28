@@ -100,6 +100,7 @@ h1, h2, h3, .hero h1, .hero h2 {
     align-items: center;
     justify-content: center;
     background: transparent;
+    cursor: pointer;
 }
 .producto {
     position: relative;
@@ -112,6 +113,7 @@ h1, h2, h3, .hero h1, .hero h2 {
     padding: 0;
     margin-bottom: 32px;
     max-width: 340px;
+    
 }
 
 .productos-container img {
@@ -120,6 +122,11 @@ h1, h2, h3, .hero h1, .hero h2 {
     max-width: 260px;
     height: auto;
     margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+.producto:hover img {
+    transform: scale(1.08);
+    z-index: 3;
 }
 
 .producto::before {
@@ -159,8 +166,50 @@ h1, h2, h3, .hero h1, .hero h2 {
     margin-bottom: 0;
     font-size: 0.9rem;
     font-family: 'Inter', sans-serif;
-    color: #303030;
+    color: #606060;
     text-align: center;
     max-width: 250px;
     text-shadow: 0 1px 6px #C47A6D33; /* Sombra suave con Rosa Polvoriento */
+}
+
+@media (min-width: 768px) {
+    .productos-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .producto {
+        margin: 16px;
+    }
+    .producto h3 {
+        font-size: 1.4rem;
+    }
+    .producto p{
+        font-size: 15px;
+        color: #606060;
+    }
+    .productos-destacados h2 {
+        font-size: 1.6rem;
+    }
+    .hero {
+        min-height: 520px;
+        padding: 64px 0;
+    }
+
+    .hero img {
+        max-width: 160px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero a {
+        font-size: 1.1rem;
+        padding: 14px 32px;
+    }
 }
