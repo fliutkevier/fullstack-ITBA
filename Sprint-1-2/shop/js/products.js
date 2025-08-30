@@ -8,7 +8,7 @@ const products = [
     materiales: "Nogal macizo FSC®, herrajes de latón",
     acabado: "Aceite natural ecológico",
     peso: "68 kg",
-    detalleUrl: "js/pruab.html" ,
+    detalleUrl: "#" ,
     capacidad: "6 compartimentos interiores",
     imagen: "../img/Aparador Uspallata.png"
   },
@@ -20,6 +20,7 @@ const products = [
     materiales: "Estructura de acero, estantes de roble",
     acabado: "Laca mate ecológica",
     capacidad: "5 estantes ajustables",
+    detalleUrl: "#" ,
     imagen: "../img/Biblioteca Recoleta.png"
   },
   {
@@ -30,6 +31,7 @@ const products = [
     materiales: "Guatambú macizo, tela bouclé",
     acabado: "Cera vegetal, tapizado premium repelente al agua y manchas",
     confort: "Espuma de alta densidad",
+    detalleUrl: "#" ,
     imagen: "../img/Butaca Mendoza.png"
   },
   {
@@ -41,6 +43,7 @@ const products = [
     acabado: "Cuero anilina premium",
     rotacion: "360° silenciosa y suave",
     garantia: "10 años en estructura",
+    detalleUrl: "#" ,
     imagen: "../img/Sillón Copacabana.png"
   },
   {
@@ -52,6 +55,7 @@ const products = [
     acabado: "Mármol pulido, aceite natural en madera",
     peso: "42 kg (25 kg en superficie)",
     cargaMaxima: "25 kg distribuidos",
+    detalleUrl: "#" ,
     imagen: "../img/Mesa de Centro Araucaria.png"
   },
   {
@@ -62,6 +66,7 @@ const products = [
     materiales: "Roble macizo FSC®, herrajes soft-close",
     acabado: "Barniz mate de poliuretano",
     almacenamiento: "1 cajón + repisa inferior, cierre suave",
+    detalleUrl: "#" ,
     imagen: "../img/Mesa de Noche Aconcagua.png"
   },
   {
@@ -72,7 +77,7 @@ const products = [
     materiales: "Roble macizo FSC®, tapizado lino",
     acabado: "Aceite natural, tapizado premium",
     caracteristicas: "Compatible con colchón 160×200, cabecero acolchado",
-    // No veo archivo de esta cama en tu carpeta: uso un placeholder para que no rompa la vista.
+    detalleUrl: "#" ,
     imagen: "../img/banner.png"
   },
   {
@@ -83,6 +88,7 @@ const products = [
     materiales: "Eucalipto FSC®, lino 100% natural",
     acabado: "Espuma HR + plumón reciclado",
     sostenibilidad: "Materiales 100% reciclables",
+    detalleUrl: "#" ,
     imagen: "../img/Sofá Patagonia.png"
   },
   {
@@ -93,6 +99,7 @@ const products = [
     materiales: "Roble macizo FSC®, mecanismo alemán",
     acabado: "Aceite-cera natural",
     capacidad: "6-10 comensales",
+    detalleUrl: "#" ,
     imagen: "../img/Mesa Comedor Pampa.png"
   },
   {
@@ -103,6 +110,7 @@ const products = [
     materiales: "Contrachapado nogal, tubo de acero",
     acabado: "Laca mate, pintura epoxi",
     incluye: "Set de 4 sillas apilables",
+    detalleUrl: "#" ,
     imagen: "../img/Sillas Córdoba.png"
   },
   {
@@ -113,6 +121,7 @@ const products = [
     materiales: "Bambú laminado, herrajes ocultos",
     acabado: "Laca mate resistente",
     almacenamiento: "1 cajón con organizador, pasacables integrado",
+    detalleUrl: "#" ,
     imagen: "../img/Escritorio Costa.png"
   },
   {
@@ -123,6 +132,7 @@ const products = [
     materiales: "Malla técnica, base cromada, tejido reciclado",
     acabado: "Tapizado premium",
     regulacion: "Altura e inclinación respaldo, certificación EN 1335",
+    detalleUrl: "#" ,
     imagen: "../img/Silla de Trabajo Belgrano.png"
   }
 ];
