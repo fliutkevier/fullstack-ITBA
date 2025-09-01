@@ -109,6 +109,7 @@ h1{
 }
 
 .boton-carrito:hover{
-    background:var(--vara-de-oro);
+    background:var(--verde-salvia);
+    color: white;
     transform:translateY(-1px)
 }
