@@ -10,6 +10,9 @@ fetch('../products.json')
       const productoDiv = document.createElement('div');
       productoDiv.classList.add('producto');
 
+      productoDiv.addEventListener('click', () => { 
+        window.location.href = `../detalle/index.html?id=${producto.id}`;
+      })
       const img = document.createElement('img');
       img.src = producto.imagen;
       img.alt = producto.nombre;
