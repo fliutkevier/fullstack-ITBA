@@ -218,8 +218,8 @@ footer {
     display: flex;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: #929292;
-    color: white;
+    background-color: #F5E6D3;
+    color: #A0522D;
     justify-content: center;
     align-items: center;
     flex-direction: column;
