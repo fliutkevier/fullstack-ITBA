@@ -1,0 +1,115 @@
+:root{
+    --siena-tostado:#A0522D;
+    --verde-salvia:#87A96B;
+    --alabastro-calido:#F5E6D3;
+    --vara-de-oro:#D4A437;
+    --rosa-polvoriento:#C47A6D;
+}
+
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:var(--alabastro-calido);
+}
+
+.producto-pagina{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.producto-informacion{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:30px;
+}
+
+@media (max-width:900px){
+    .producto-informacion{grid-template-columns:1fr};
+}
+
+.producto-imagen{
+    background:white;
+    border-radius:15px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:420px;
+    box-shadow: 0 0 15px #a08b6e;
+}
+
+.producto-imagen img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius:12px;
+    max-height:560px;
+}
+
+.producto-detalles{
+    background:white;
+    border-radius:15px;
+    padding:24px;
+    box-shadow: 0 0 15px #a08b6e;
+}
+
+h1{
+    margin:0 0 8px 0;
+    font-size: clamp(22px, 3vw, 32px);
+    font-family: 'Playfair Display', Georgia;
+    color: var(--siena-tostado);
+}
+
+.descripcion{
+    line-height:1.6;
+    margin:10px 0 18px 0;
+}
+
+.detalles h2{
+    font-size:18px;
+    margin:0 0 10px 0;
+    
+    color: var(--siena-tostado);
+}
+
+.detalles li {
+    display: flex;           
+}
+
+.detalles .clave {
+    background-color: var(--alabastro-calido); 
+    padding: 10px 10px;
+    min-width: 120px;          
+    border-radius: 5px 0 0 5px; 
+    color: var(--siena-tostado);
+    border: 0.5px solid var(--siena-tostado);
+}
+
+.detalles .valor {
+    
+    color: var(--siena-tostado);
+    padding: 10px 10px;
+    border-radius: 0 5px 5px 0;
+    flex: 1;                   
+    border: 0.5px solid var(--siena-tostado);
+}
+
+.boton-carrito{
+    width:100%;
+    padding:14px 18px;
+    border: 0.5px solid var(--verde-salvia);
+    border-radius:14px;
+    background-color: white;
+    color: var(--verde-salvia);
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
+    transition:.15s transform ease, .15s background ease;
+}
+
+.boton-carrito:hover{
+    background:var(--verde-salvia);
+    color: white;
+    transform:translateY(-1px)
+}
