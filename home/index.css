@@ -24,6 +24,33 @@ h1, h2, h3, .hero h1, .hero h2 {
     text-transform: uppercase;
 }
 
+/* NavBar */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5E6D3;
+}
+
+nav a img {
+    height: 4em;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5em;
+    align-items: center;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #A0522D;
+    font-family: sans-serif;
+}
+
 /*hero */
 .hero {
     background-image: url('../img/banner.png');
@@ -172,6 +199,34 @@ h1, h2, h3, .hero h1, .hero h2 {
     text-shadow: 0 1px 6px #C47A6D33; /* Sombra suave con Rosa Polvoriento */
 }
 
+/* Footer Mobile */
+
+footer {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #929292;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+footer ul {
+    font-size: 0.9em;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (min-width: 768px) {
     .productos-container {
         flex-direction: row;
@@ -211,5 +266,25 @@ h1, h2, h3, .hero h1, .hero h2 {
     .hero a {
         font-size: 1.1rem;
         padding: 14px 32px;
+    }
+
+    /* NavBar Desktop*/
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 2em;
+        margin-right: 2em;
+    }
+
+    /* Footer Desktop */
+    footer ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 4rem;
+        text-align: center;
     }
 }
