@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="../img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>Hermanos Jota</title>
+</head>
+<body>
+  <main class="hola">
+    <p id="noResults" class="no-results" style="display:none;">No se encontraron resultados.</p>
+    <div class="search-container">
+  <div class="search-wrapper">
+    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="21 21l-4.35-4.35"></path>
+    </svg>
+    <input 
+      type="text" 
+      class="search-input" 
+      id="searchInput"
+      placeholder="Buscar muebles por nombre, estilo o material..."
+      autocomplete="off"
+    >
+    <button class="search-clear" id="searchClear" type="button">×</button>
+  </div>
+</div>
+
+<div class="search-results-info" id="searchResults"></div>
+    <section id="productos-container" class="container-prueba"></section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  
+  <script src="js/products.js" defer></script>
+  <script src="js/cartService.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
