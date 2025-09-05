@@ -1,6 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const productId = parseInt(params.get("id"));
 
+
 fetch("../products.json")
     .then(response => response.json())
     .then(data => {
@@ -30,3 +31,4 @@ fetch("../products.json")
         }
     })
     .catch(error => console.error("Error al cargar el JSON:", error));
+
