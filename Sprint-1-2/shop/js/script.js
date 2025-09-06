@@ -257,4 +257,13 @@ function crearTarjetaProductoInicio(productos, terminoBusqueda = '') {
   }
 }
 
-crearTarjetaProductoInicio(products);
+fetch("../products.json")
+  .then(response => response.json())
+  .then(data => {
+    todosLosProductos = data;
+    crearTarjetaProductoInicio(data);
+  })
+  .catch(error => {
+    console.error("Error al cargar los productos:", error);
+    contenedorTarjetas.innerHTML = "<p>Error al cargar los productos.</p>";
+  });
