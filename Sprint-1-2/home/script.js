@@ -11,7 +11,7 @@ fetch('../products.json')
       productoDiv.classList.add('producto');
 
       productoDiv.addEventListener('click', () => { 
-        window.location.href = `../detalle/index.html?id=${producto.id}`;
+        window.location.href = `../detalle/detalle.html?id=${producto.id}`;
       })
       const img = document.createElement('img');
       img.src = producto.imagen;

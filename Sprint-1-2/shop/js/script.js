@@ -230,7 +230,7 @@ function crearTarjetaProductoInicio(productos, terminoBusqueda = '') {
           <h3 class="card__title">${producto.nombre}</h3>
           <p class="card__desc">${producto.descripcion || ""}</p>
           <div class="card__actions">
-            <a href="../detalle/index.html?id=${producto.id}" class="btn-ghost">Vista previa</a>
+            <a href="../detalle/detalle.html?id=${producto.id}" class="btn-ghost">Vista previa</a>
             <button type="button" class="btn-ghost btn-cart">Agregar al carrito</button>
           </div>
         </div>

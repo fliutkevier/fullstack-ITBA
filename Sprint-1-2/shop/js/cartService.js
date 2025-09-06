@@ -1,11 +1,11 @@
 function agregarAlCarrito(producto){
-    const memoria = JSON.parse(localStorage.getItem("products"));
+    const memoria = JSON.parse(sessionStorage.getItem("products"));
     console.log(memoria);
     let cuenta=0;
     if (!memoria){
         const nuevoProducto = getNuevoProductoParaMemoria(producto);
         
-        localStorage.setItem("products",JSON.stringify([nuevoProducto]))
+        sessionStorage.setItem("products",JSON.stringify([nuevoProducto]))
         cuenta=1;
     }else{
         const indiceProducto=memoria.findIndex(products => products.id ===producto.id);
@@ -19,7 +19,7 @@ function agregarAlCarrito(producto){
             cuenta=nuevaMemoria[indiceProducto].cantidad;
         }
 
-        localStorage.setItem("products",JSON.stringify(nuevaMemoria))
+        sessionStorage.setItem("products",JSON.stringify(nuevaMemoria))
         
     }
 
@@ -29,18 +29,18 @@ function agregarAlCarrito(producto){
 }
 
 function restarALCarrito(producto){
-    const memoria = JSON.parse(localStorage.getItem("products"));
+    const memoria = JSON.parse(sessionStorage.getItem("products"));
     const indiceProducto=memoria.findIndex(products => products.id ===producto.id);
 
     if(memoria[indiceProducto].cantidad===1){
         memoria.splice(indiceProducto,1);
-        localStorage.setItem("products",JSON.stringify(memoria))
+        sessionStorage.setItem("products",JSON.stringify(memoria))
 
     }else{
         memoria[indiceProducto].cantidad--;
 
     }
-    localStorage.setItem("products",JSON.stringify(memoria));
+    sessionStorage.setItem("products",JSON.stringify(memoria));
     actualizarNumeroCarrito();
 
 }
@@ -51,10 +51,10 @@ function getNuevoProductoParaMemoria(producto){
     return nuevoProducto;
 }
 
-const cuentaCarritoElement= document.getElementById("cuenta-carrito");
+const cuentaCarritoElement= document.getElementById("carrito-count");
 
 function actualizarNumeroCarrito(){
-    const memoria = JSON.parse(localStorage.getItem("products"));
+    const memoria = JSON.parse(sessionStorage.getItem("products"));
     if(memoria && memoria.length>0){
         const cuenta=memoria.reduce((acum,current)=> acum+current.cantidad,0);
         cuentaCarritoElement.innerText=cuenta;
@@ -66,5 +66,4 @@ function actualizarNumeroCarrito(){
 
 }
 
-actualizarNumeroCarrito()
-
+actualizarNumeroCarrito();
