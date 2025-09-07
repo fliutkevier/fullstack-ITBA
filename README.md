@@ -15,7 +15,7 @@ Desarrollar un e-commerce funcional para una mueblería, aplicando los conceptos
 ## Integrantes
 - Ivo Mariezcurrena
 - Leonel Martínez
-- Franco
+- Franco Liutkevier
 - Agustina Lezica
 - May
 
