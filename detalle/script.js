@@ -20,7 +20,7 @@ fetch("../products.json")
             const descripcion = document.getElementById("producto-descripcion");
             const especificaciones = document.getElementById("especificaciones-producto");
 
-            img.src = productoElegido.imagen;
+            img.src = '../' + productoElegido.imagen;
             img.alt = productoElegido.nombre;
             titulo.textContent = productoElegido.nombre.toUpperCase();
             descripcion.textContent = productoElegido.descripcion;
