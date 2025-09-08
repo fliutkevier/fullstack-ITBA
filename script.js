@@ -1,7 +1,7 @@
 
 const contenedor = document.querySelector('.productos-container');
 
-fetch('../products.json')
+fetch('products.json')
   .then(response => response.json())
   .then(productos => {
     const destacados = productos.slice(0, 4);
@@ -11,7 +11,7 @@ fetch('../products.json')
       productoDiv.classList.add('producto');
 
       productoDiv.addEventListener('click', () => { 
-        window.location.href = `../detalle/detalle.html?id=${producto.id}`;
+        window.location.href = `detalle/detalle.html?id=${producto.id}`;
       })
       const img = document.createElement('img');
       img.src = producto.imagen;

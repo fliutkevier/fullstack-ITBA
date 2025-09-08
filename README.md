@@ -14,7 +14,10 @@ Desarrollar un e-commerce funcional para una mueblería, aplicando los conceptos
 
 ## Integrantes
 - Ivo Mariezcurrena
-- 
+- Leonel Martínez
+- Franco Liutkevier
+- Agustina Lezica
+- Mayra Limachi
 
 ## Descripción breve
 Este proyecto consiste en el desarrollo de un e-commerce para la muebreria "Hermanos Jota", donde los usuarios pueden navegar por un catálogo de productos, ver detalles de cada uno, agregar productos al carrito y completar un formulario de contacto. La aplicación implementa funcionalidades como 4 productos destacados en la pantalla de presentacion, listado de productos, detalle individual, carrito de compras y validación de formularios.
