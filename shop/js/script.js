@@ -218,11 +218,12 @@ function crearTarjetaProductoInicio(productos, terminoBusqueda = '') {
     productos.forEach((producto, i) => {
       const card = document.createElement("article");
       card.className = "tarjeta-producto";
+      const imgPath = '../' + producto.imagen;
 
       card.innerHTML = `
         <a class="card__link" aria-label="${producto.nombre}">
           <div class="card__img-wrap">
-            <img src="${encodeURI(producto.imagen)}" class="card_img" alt="${producto.nombre}">
+            <img src="${encodeURI(imgPath)}" class="card_img" alt="${producto.nombre}">
           </div>
         </a>
 
